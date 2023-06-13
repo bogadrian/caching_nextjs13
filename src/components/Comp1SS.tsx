@@ -7,8 +7,9 @@ const getData = async () => {
   return data;
 };
 
-export const Comp1SS = () => {
-  const data = getData();
+export const Comp1SS = async () => {
+  const data = await getData();
+
   return (
     <div
       style={{

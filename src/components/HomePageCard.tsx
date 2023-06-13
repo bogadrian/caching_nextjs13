@@ -13,9 +13,11 @@ export const HomePageCard = () => {
       }}
     >
       Dashboard Page
+      {/* @ts-expect-error Async Server Component */}
       <Comp1SS />
-      <Comp3CC />
+      {/* @ts-expect-error Async Server Component */}
       <Comp2SS />
+      <Comp3CC />
     </div>
   );
 };
